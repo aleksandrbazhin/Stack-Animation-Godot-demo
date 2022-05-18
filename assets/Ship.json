@@ -1,0 +1,138 @@
+{
+    "name": "Ship",
+    "stack": [
+        {
+            "image_path": "hull1.png",
+            "type": "static",
+            "sprite_size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "sprite_offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "z-height": -1.0,
+            "xy-origin": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "xy-pivot": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        {
+            "image_path": "hull2.png",
+            "type": "static",
+            "sprite_size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "sprite_offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "z-height": -1.0,
+            "xy-origin": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "xy-pivot": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        {
+            "image_path": "hull3.png",
+            "type": "static",
+            "sprite_size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "sprite_offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "z-height": -1.0,
+            "xy-origin": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "xy-pivot": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        {
+            "image_path": "big_pennant.png",
+            "type": "animated",
+            "sprite_size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "animation_fps": 15,
+            "animation_frames": [
+                {
+                    "frame_offset": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                },
+                {
+                    "frame_offset": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                },
+                {
+                    "frame_offset": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                },
+                {
+                    "frame_offset": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                },
+                {
+                    "frame_offset": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            ],
+            "z-height": 5.0,
+            "xy-origin": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "xy-pivot": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        }
+    ]
+}

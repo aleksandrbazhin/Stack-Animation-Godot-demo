@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://runtime/StackAn.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TestScene.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("StackAn:pitch")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StackAn:roll")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "waves"
+length = 3.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("StackAn:pitch")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1.03526 ),
+"update": 0,
+"values": [ -30.0, 30.0, -30.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("StackAn:roll")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -30.0, 30.0, -45.0 ]
+}
+
+[node name="TestRoot" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="StackAn" parent="." instance=ExtResource( 1 )]
+position = Vector2( 526, 279 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "waves"
+anims/RESET = SubResource( 2 )
+anims/waves = SubResource( 1 )
