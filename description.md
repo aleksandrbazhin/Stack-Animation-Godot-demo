@@ -218,3 +218,10 @@ Where sprite definitions are
 }
 ```
 - **sprite-slices** is an array of vector masks which cut the incoming texture to several sprites on different **z-level**s **z-level** here overrides the **z-level** of the sprite
+
+
+## What's next?
+- custom internal and external variables
+- trajectories for internal variables
+- bones and IK
+- texture deformation in the runtime (like in Spine)
