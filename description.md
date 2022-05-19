@@ -10,9 +10,9 @@ We expect that this can be greatly simplified by having a separate step in your 
 
 You load your sprites which are to be stacked, then set up the relative height (z) for each one in the stack, but also can setup xy-offset and a pivot point. Then you export your project as a JSON file with a packed texture.
 
-The main time saver for users can be not the utitity to stack the existing sprites, but to generate several sprites from a single one to create that parallax effect. The most obvious approach is to use a vector mask to cut the sprite in parts and fill the holes on the lower levels (copying of higher level is a poor option since it creates obvious artefacts).
+The main time saver for users can be not the utility to stack the existing sprites, but to generate several sprites from a single one to create that parallax effect. The most obvious approach is to use a vector mask to cut the sprite in parts and fill the holes on the lower levels (copying of higher level is a poor option since it creates obvious artifacts).
 
-The original idea was to create those vector masks automaticly, which can be possible if we new the 3D geometry of the object which the sprite represents. Then we would need a heightmap editor built in in our application. The alternative approach to create a self-sufficient app is to embed a vector mask editor, which we plan to go for.
+The original idea was to create those vector masks automatically, which can be possible if we new the 3D geometry of the object which the sprite represents. Then we would need a heightmap editor built in in our application. The alternative approach to create a self-sufficient app is to embed a vector mask editor, which we plan to go for.
 
 Several runtimes for common game engines are planned.
 
@@ -25,13 +25,13 @@ Several variables are built-in, these are
 - roll
 - yaw (rotation) is separate for each slice 
 
-Later we plan to add the ability to setupu your own external variables to allow for more complex animations.
+Later we plan to add the ability to setup your own external variables to allow for more complex animations.
 
 ### The exchange format
 The animations are supposed to be stored as a .json documents accompanied with textures.
 
 #### Export JSON Structure
-The overall document srtucture on an example of a ship 
+The overall document structure on an example of a ship 
 
 ```json
 {
@@ -82,7 +82,7 @@ Static sprite:
 
 - **sprite_size** - the size to cut off from the texture atlas 
 - **sprite_offset** - where to cut it from
-- **z-level** - the level of the sprite whic will be used to oreder the sprites and calulate it's movement when the whole object moves
+- **z-level** - the level of the sprite which will be used to order the sprites and calculate it's movement when the whole object moves
 - **xy-origin** - the offset of the sprite inside the object
 - **rotation** - the angle at which the the s[rite is rotated related to the object
 - **scale** - the scale of that sprite
@@ -155,7 +155,7 @@ There can be two ways to visualize the stack.
 
 #### Godot engine
 
-The runtie for a Godot engine with an example animation is provided.
+The runtime for a Godot engine with an example animation is provided.
 
 ### StackAn generator - Qt5 program
 
